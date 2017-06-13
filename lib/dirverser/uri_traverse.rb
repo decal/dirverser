@@ -15,7 +15,7 @@ module Dirverser
         last = alen - 1
 
         if opts[:apply_reverse]
-          for i in 2 .. last
+          for i in 1 .. last
             astr = '/'
             astr << arry[i .. last].join('/')
 

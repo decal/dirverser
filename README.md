@@ -14,6 +14,15 @@
 
 ## **Examples**
 
+```
+require 'dirverser'
+
+include Dirverser::URI
+
+traverse('https://google.com/a/b/c')
+=> ["https://google.com/a/", "https://google.com/a/b/", "https://google.com/a/b/c/"]
+```
+
 ## Requirements
 
 * [Ruby](http://www.ruby-lang.org/) >= 2.4.0

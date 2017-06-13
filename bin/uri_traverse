@@ -15,8 +15,12 @@ require 'uri'
 
 include Dirverser, Dirverser::URI
 
-dirs = traverse(ARGV.first, { :trail_slash => false })
+dirs = traverse(ARGV.first, { :trail_slash => false } )
 
 p dirs
+
+dirz = traverse(ARGV.first, { :trail_slash => true, :apply_reverse => true } )
+
+p dirz
 
 exit 0
