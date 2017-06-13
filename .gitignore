@@ -1,0 +1,9 @@
+.rake_*
+core
+/.yardoc/
+/_yardoc/
+/doc/
+/rdoc/
+.ruby-version
+.env
+.rvmrc

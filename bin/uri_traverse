@@ -1,0 +1,22 @@
+#!/usr/bin/env ruby
+#
+# Traverse all folders in an URL path (optionally in reverse)
+#
+
+require 'dirverser'
+
+if ARGV.size < 1
+  STDOUT.puts "usage: #{$0} URL"
+
+  exit 1
+end
+
+require 'uri'
+
+include Dirverser, Dirverser::URI
+
+dirs = traverse(ARGV.first, { :trail_slash => false })
+
+p dirs
+
+exit 0
